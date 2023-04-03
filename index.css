@@ -32,9 +32,11 @@
         width: 100%;
         z-index: 10;
         top: 0;
+        /* background-color: antiquewhite; */
+        /* opacity: .5; */
     }
     
-    .header_container {
+    .header-container {
         display: flex;
         
         background-color: rgb(18,91,80);
@@ -42,13 +44,13 @@
         padding: 5px;
         height: 10vh;
     }
-    .header_logo_container {
+    .header-logo-container {
         display: flex;
         align-items: center;
     }
     
-    .header_container  img{width: 10vh;}
-    .header_container  span{display: none;}
+    .header-container  img{width: 10vh;}
+    .header-container  span{display: none;}
 
     .hamburger-lines {
         position: absolute;
@@ -71,7 +73,7 @@
         z-index: 11;
     }  
 
-    .menu_links{   
+    .menu-links{   
         position: absolute;
         top: 10vh;
         right: -50vw;
@@ -79,18 +81,18 @@
         display: flex;
         flex-direction: column;  
         align-items: center;
-        background-color: rgba(18,91,80,0.75);  
+        background-color: rgba(18,91,80,0.9);  
         border-radius: 0px 0px 0px 20px;  
         font-size: 35px;
         transition: transform 0.3s ease-in;  
         z-index: 10;
     }
     
-    .menu_links_move {
+    .menu-links-move {
         transform: translate(-100%);  
     }
 
-    .menu_links a {
+    .menu-links a {
         text-decoration: none;
         font-family: cursive;
         color: black;
@@ -120,25 +122,58 @@
 
     #home {
         position: relative;
-        top: 10vh;
+        margin-top: calc(10vh + 10px);
         width: 100vw;
-        height: 90vh;
-    }
-    .home_container {
+        min-height: 90vh;
+        max-height: max-content;
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 10px;
-        height: 100%;
+        justify-content: space-between;
+    }
+    
+    .home-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px 10px 0 10px;
+        /* height: 550px; */
     }
 
     .hello {
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        padding: 10px;
+        width: 90%;
+        text-align: center;
     }
 
-    /* .scroll_down {
-        position: absolute;
-        bottom: 0px;
-    } */
+    .short-description {
+        padding: 10px 0 50px 0;
+        font-size: .9rem;
+        width: 70%;
+    }
 
+    .inPageLink {
+        height: 50px;
+        width: 75px;
+        border-radius: 25px;
+        background-color: antiquewhite;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .scroll-down img {
+        height: 50px;
+    }
+
+    #about {
+        background-color: aqua;
+        height: 90vh;
+    }
+    
+    #projects {
+        height: 90vh;
+
+    }
 }
