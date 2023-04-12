@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>My Portfolio</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="gpt.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="logo">
+				<a href="#">Logo</a>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<section id="intro">
+		<div class="container">
+			<h1>Welcome to my portfolio</h1>
+			<p>I am a frontend developer with experience in HTML, CSS, and JavaScript. I love creating beautiful and responsive websites.</p>
+		</div>
+	</section>
+
+	<section id="skills">
+		<div class="container">
+			<h2>Skills</h2>
+			<div class="skill">
+				<h3>HTML</h3>
+				<div class="bar" style="width: 90%;"></div>
+				<p>Proficient in writing clean and semantic HTML code.</p>
+			</div>
+			<div class="skill">
+				<h3>CSS</h3>
+				<div class="bar" style="width: 80%;"></div>
+				<p>Skilled in creating beautiful and responsive designs using CSS.</p>
+			</div>
+			<div class="skill">
+				<h3>JavaScript</h3>
+				<div class="bar" style="width: 70%;"></div>
+				<p>Experience in writing vanilla JavaScript as well as working with popular frameworks like React.</p>
+			</div>
+			<div class="skill">
+				<h3>React</h3>
+				<div class="bar" style="width: 60%;"></div>
+				<p>Proficient in building dynamic and scalable web applications using React.</p>
+			</div>
+		</div>
+	</section>
+
+	<section id="projects">
+		<div class="container">
+			<h2>Projects</h2>
+			<div class="cards">
+				<div class="card">
+					<h3>Project 1</h3>
+					<p>A responsive website built using HTML, CSS, and JavaScript. It showcases a portfolio of artwork and allows users to browse and purchase prints.</p>
+					<a href="#">View project</a>
+				</div>
+				<div class="card">
+					<h3>Project 2</h3>
+					<p>A React-based web application that allows users to search for and save recipes. It uses an API to fetch recipe data and allows users to save recipes for later.</p>
+					<a href="#">View project</a>
+				</div>
+				<div class="card">
+					<h3>Project 3</h3>
+					<p>A mobile-first web application that helps users track their water intake. It uses local storage to persist data and provides reminders throughout the day to encourage hydration.</p>
+					<a href="#">View project</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="contact">
+		<div class="container">
+			<h2>Contact Me</h2>
+			<form action="#" method="POST">
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" placeholder="Enter your name" required>
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" placeholder="Enter your email" required>
+				<label for="message">Message:</label>
+				<textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+				<button type="submit">Send Message</button>
+			</form>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<p>&copy; 2023 My Portfolio</p>
+		</div>
+	</footer>
+
+</body>
+</html>
