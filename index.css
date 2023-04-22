@@ -278,6 +278,17 @@ a {
         font-size: .9rem;
     }
 
+    .skills {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        margin-top: 10px;
+    }
+
+    .skills-title {
+        margin: 5px auto;
+    }
+
     .list-skills {
         display: flex;
         flex-wrap: wrap;
@@ -286,9 +297,16 @@ a {
     }
 
     .list-skills li {
-        width: 50px;
+        width: fit-content;
+        padding: 0 5px 0 5px;
+        margin: 2px 5px 2px 5px;
+        transform: skewX(-35deg);
+        background-color: aliceblue;
     }
-    
+
+    li p {
+        transform: skewX(35deg);
+    }
     
     /* ***** projects section starts here ***** */
     
