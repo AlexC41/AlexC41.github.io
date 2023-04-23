@@ -117,13 +117,16 @@ a {
         transform: rotate(-45deg) translate(8px,-3px);  
     }  
 
+    .section {
+        height: 90vh;
+    }
+
     /* ***** home section starts here ***** */
 
     #home {
         position: relative;
         margin-top: 10vh;
         width: 100vw;
-        height: 90vh;
         max-height: max-content;
         display: flex;
         flex-direction: column;
@@ -135,7 +138,7 @@ a {
         align-items: center;
         justify-content: space-between;
         margin: 10px 10px 0 10px;
-        height: 90vh;
+        height: 100%;
     }
     .introduction {
         display: flex;
@@ -228,7 +231,7 @@ a {
     #about {
         background-color: rgb(175,138,112);
         min-height: 90vh;
-        max-height: fit-content;
+        max-height: max-content;
         padding-bottom: 10px;
     }
 
@@ -313,7 +316,8 @@ a {
     /* ***** projects section starts here ***** */
     
     #projects {
-        height: 90vh;
+        min-height: 90vh;
+        max-height: max-content;
     }
 
     .projects-container {
@@ -331,30 +335,34 @@ a {
     
     .project-wrapper {
         perspective: 150rem;
-        height: 200px;
-        /* width: 50%; */
-        /* margin: 2rem; */
+        height: 180px;
         box-shadow: none;
         background: none;
-        /* background-color: white; */
+        margin-bottom: 10px;
+
     }
 
     .project {
-        height: 10rem;
+        height: 180px;
         border-radius: 15px;
         transition: all 0.8s ease;
         backface-visibility: hidden;
         position: absolute;
-        top: 0;
-        left: 0;
         width: 100%;
-        /* padding: 100px; */
-        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-
     .project img {
-        width:100px
+        height: 100%;
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    .project div {
+        position: absolute;
+        top: 5px;
     }
 
     .project.description {
@@ -365,7 +373,7 @@ a {
 
     .project.thumbnail {
         background-color: #0093E9;
-        background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+        /* background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%); */
     }
 
     .project-wrapper:hover .project.thumbnail {
@@ -375,5 +383,12 @@ a {
     .project-wrapper:hover .project.description {
         transform: rotateY(0deg);
     }
+
+    /* ***** contact me section starts here ***** */
+
+    #contact{
+    background-color: rgb(175,138,112);
+    }
+    
 
 }
