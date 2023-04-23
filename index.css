@@ -26,13 +26,16 @@ a {
     body {
         background-color: rgb(100,110,120);
         position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     /* ***** navbar starts here ***** */
     
     nav {
         position: fixed;
-        width: 100%;
+        width: 100vw;
         height: 10vh;
         z-index: 10;
         top: 0;
@@ -118,8 +121,29 @@ a {
     }  
 
     .section {
-        height: 90vh;
+        min-height: 90vh;
+        max-height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
     }
+
+    .title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+        width: 80%;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
 
     /* ***** home section starts here ***** */
 
@@ -161,6 +185,8 @@ a {
     }
 
     .lower-Home {
+        position: absolute;
+        bottom:5px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -235,14 +261,6 @@ a {
         padding-bottom: 10px;
     }
 
-    .about-container {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 90vw;
-        margin: auto;
-    }
     .about-title {
         display: flex;
         flex-direction: column;
@@ -278,27 +296,24 @@ a {
         text-indent: 15px;
     }
 
-
     .info-description {
         font-size: .9rem;
+        text-indent: 10px;
     }
 
-    .skills {
+    .skills-wrapper {
         display: flex;
         flex-direction: column;
-        width: 70%;
+        align-items: center;
+        width: 90%;
         margin-top: 10px;
-    }
-
-    .skills-title {
-        margin: 5px auto;
     }
 
     .list-skills {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         list-style-type: none;
-
     }
 
     .list-skills li {
@@ -334,12 +349,13 @@ a {
     }
     
     .project-wrapper {
-        perspective: 150rem;
+        /* perspective: 150rem; */
         height: 180px;
-        box-shadow: none;
-        background: none;
         margin-bottom: 10px;
-
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .project {
@@ -348,7 +364,7 @@ a {
         transition: all 0.8s ease;
         backface-visibility: hidden;
         position: absolute;
-        width: 100%;
+        width: 90%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -373,7 +389,7 @@ a {
 
     .project.thumbnail {
         background-color: #0093E9;
-        /* background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%); */
+        background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
     }
 
     .project-wrapper:hover .project.thumbnail {
@@ -386,9 +402,64 @@ a {
 
     /* ***** contact me section starts here ***** */
 
-    #contact{
-    background-color: rgb(175,138,112);
+    #contact {
+        background-color: rgb(175,138,112);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .description {
+        width: 80%;
+        margin: 5px auto;
+        text-align: center;
+    }
+
+    fieldset {
+        width: 55vw;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+    }
+
+    label{
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+        /* align-items: center; */
+    }
+    /* input {
+        width: 80%;
+    } */
+    
+    textarea {
+        min-height: 55px;
+        max-height: max-content;
+        padding: 5px;
     }
     
+    input[type=submit]{
+        align-self: center;
+        margin-top: 5px;
+    }
+
+    .test{
+        margin:auto
+    }
+
+    .social-media {
+        display: flex;
+
+    }
+
+    .sm-link img {
+        width: 8vw;
+        margin: 5px;
+    }
+
 
 }
