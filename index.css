@@ -440,6 +440,7 @@ a {
         min-height: 55px;
         max-height: max-content;
         padding: 5px;
+        width: 90%;
     }
     
     input[type=submit]{
