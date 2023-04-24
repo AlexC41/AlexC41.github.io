@@ -430,11 +430,7 @@ a {
         display: flex;
         flex-direction: column;
         width: 50vw;
-        /* align-items: center; */
     }
-    /* input {
-        width: 80%;
-    } */
     
     textarea {
         min-height: 55px;
@@ -442,7 +438,6 @@ a {
         padding: 5px;
         width: 90%;
         margin: auto;
-        background-color: #4158D0;
     }
     
     input[type=submit]{
@@ -462,6 +457,27 @@ a {
     .sm-link img {
         width: 8vw;
         margin: 5px;
+    }
+
+    /* ***** footer section starts here ***** */
+
+    footer{
+        background-color: #e70404;
+        position: absolute;
+        bottom: 0;
+
+        width: 100vw;
+        min-height: 100px;
+        max-height: max-content;
+    }
+
+    footer > div {
+        display: flex;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
     }
 
 
