@@ -442,6 +442,7 @@ a {
         padding: 5px;
         width: 90%;
         margin: auto;
+        background-color: #4158D0;
     }
     
     input[type=submit]{
